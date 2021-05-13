@@ -44,8 +44,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-theme-julia`,
-        short_name: `julia`,
+        name: `eyeori.xyz`,
+        short_name: `eyeori`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
