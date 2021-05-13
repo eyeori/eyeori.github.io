@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: `Alan Fu`,
     subtitle: `software developer`,
-    description: `personal blogs`,
+    description: `Alan's personal blog site.`,
     author: `@eyeori`,
     github: `https://github.com/eyeori/`,
   },
@@ -50,7 +50,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: path.resolve(__dirname, `src/images/eyeori-icon.png`), // This path is relative to the root of the site.
+        icon: path.resolve(__dirname, `src/images/gatsby-icon.png`), // This path is relative to the root of the site.
       },
     },
     {

@@ -1,10 +1,8 @@
 ---
-title: "First Blog"
-date: "2021-05-13"
+title: "Self Introduction"
+date: "1987-12-07"
 draft: false
-path: "/blog/First Blog"
+path: "/blog/Self Introduction"
 ---
 
-### Hello World!
-
-> Let life be beautiful!
+### Let life be beautiful!
