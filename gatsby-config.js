@@ -23,6 +23,8 @@ module.exports = {
         path: path.resolve(`blog`, `images`),
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-transformer-remark`,
