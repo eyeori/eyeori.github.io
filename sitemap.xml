@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://eyeori.xyz/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/blog/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/blog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/blog/self-introduction-cn/</loc>
+        <lastmod>1987-12-07</lastmod>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/blog/self-introduction/</loc>
+        <lastmod>1987-12-07</lastmod>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/projects/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/tags/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/tags/self-introduction/</loc>
+    </url>
+</urlset>
