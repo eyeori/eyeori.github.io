@@ -1,11 +1,11 @@
 +++
 title = "Home"
-paginate_by = 5
 template = "section.html"
 
 [extra]
-header = {title = "Alan Fu", img = "$BASE_URL/img/me_avatar.jpg" }
+header = {title = "Alan Fu", img = "img/me_avatar.jpg" }
 section_path = "blog/_index.md"
+max_posts = 5
 +++
 
 • Working at NetEase Yanxuan<br/>• Graduated from Hangzhou Dianzi University

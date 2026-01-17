@@ -1,22 +1,89 @@
+# ============================================================================
+# 站点基本信息
+# ============================================================================
 base_url = "https://eyeori.xyz"
 title = "Alan's Blog"
 description = "Software Developer"
 author = "Alan Fu"
 
-generate_feed = true
+# ============================================================================
+# Zola 构建配置
+# ============================================================================
+theme = "tabi"
+default_language = "en"
+generate_feeds = true
 compile_sass = true
 minify_html = true
 build_search_index = true
+taxonomies = [{ name = "tags", feed = true }]
 
-taxonomies = [
-    { name = "tags", feed = true },
+# ============================================================================
+# 简体中文语言配置
+# ============================================================================
+[languages.zh]
+title = "Alan 的博客"
+description = "软件开发者"
+generate_feeds = true
+build_search_index = false  # ElasticLunr 不支持中文
+taxonomies = [{ name = "tags", feed = true }]
+
+# ============================================================================
+# 搜索配置
+# ============================================================================
+[search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+index_format = "elasticlunr_json"
+
+# ============================================================================
+# Markdown 渲染配置
+# ============================================================================
+[markdown]
+bottom_footnotes = true
+smart_punctuation = true
+
+[markdown.highlighting]
+theme = "catppuccin-frappe"
+
+# ============================================================================
+# 主题配置 (Tabi)
+# ============================================================================
+[extra]
+# 外观
+skin = "teal"
+theme_switcher = true
+favicon_emoji = "👨‍💻"
+
+# 功能开关
+copy_button = true
+show_reading_time = true
+show_date = true
+toc = true
+
+# 导航菜单
+menu = [
+    { name = "blog", url = "blog", trailing_slash = true },
+    { name = "projects", url = "projects", trailing_slash = true },
+    { name = "tags", url = "tags", trailing_slash = true },
 ]
 
-
-[markdown]
-highlight_code = true
-
-
-[extra]
-default_theme = "light"
-custom_subset = true
+# ============================================================================
+# 评论系统配置 (Giscus - 当前禁用)
+# ============================================================================
+[extra.giscus]
+enabled_for_all_posts = false
+automatic_loading = true
+repo = ""
+repo_id = ""
+category = ""
+category_id = ""
+mapping = "pathname"
+strict_title_matching = 1
+enable_reactions = 1
+comment_box_above_comments = false
+light_theme = "light"
+dark_theme = "dark"
+lang = "en"
+lazy_loading = true
