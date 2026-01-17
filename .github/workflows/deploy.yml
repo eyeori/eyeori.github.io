@@ -1,0 +1,50 @@
+# GitHub Actions 工作流：自动构建和部署 Zola 站点到 GitHub Pages
+name: Deploy to GitHub Pages
+
+on:
+  # 推送到 main 分支时触发
+  push:
+    branches:
+      - main
+  # 允许手动触发
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 权限
+permissions:
+  contents: write
+
+# 只允许一个并发部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# 默认使用 bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # 构建和部署任务
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive  # 拉取 Tabi 主题子模块
+          fetch-depth: 0
+
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.19.2
+
+      - name: Build site
+        run: zola build
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
