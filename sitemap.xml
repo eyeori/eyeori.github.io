@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://eyeori.xyz/sitemap_style.xsl" type="text/xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://eyeori.xyz/</loc>
@@ -8,10 +9,6 @@
     </url>
     <url>
         <loc>https://eyeori.xyz/blog/page/1/</loc>
-    </url>
-    <url>
-        <loc>https://eyeori.xyz/blog/self-introduction-cn/</loc>
-        <lastmod>1987-12-07</lastmod>
     </url>
     <url>
         <loc>https://eyeori.xyz/blog/self-introduction/</loc>
@@ -25,5 +22,27 @@
     </url>
     <url>
         <loc>https://eyeori.xyz/tags/self-introduction/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/zh/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/zh/blog/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/zh/blog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/zh/blog/self-introduction/</loc>
+        <lastmod>1987-12-07</lastmod>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/zh/projects/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/zh/tags/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/zh/tags/self-introduction/</loc>
     </url>
 </urlset>
