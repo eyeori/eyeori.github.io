@@ -18,6 +18,9 @@
         <loc>https://eyeori.xyz/projects/</loc>
     </url>
     <url>
+        <loc>https://eyeori.xyz/projects/devtools/</loc>
+    </url>
+    <url>
         <loc>https://eyeori.xyz/tags/</loc>
     </url>
     <url>
@@ -38,6 +41,9 @@
     </url>
     <url>
         <loc>https://eyeori.xyz/zh/projects/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/zh/projects/devtools/</loc>
     </url>
     <url>
         <loc>https://eyeori.xyz/zh/tags/</loc>
