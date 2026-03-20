@@ -18,7 +18,13 @@
         <loc>https://eyeori.xyz/projects/</loc>
     </url>
     <url>
+        <loc>https://eyeori.xyz/projects/cronus/</loc>
+    </url>
+    <url>
         <loc>https://eyeori.xyz/projects/devtools/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/projects/lant/</loc>
     </url>
     <url>
         <loc>https://eyeori.xyz/tags/</loc>
@@ -43,7 +49,13 @@
         <loc>https://eyeori.xyz/zh/projects/</loc>
     </url>
     <url>
+        <loc>https://eyeori.xyz/zh/projects/cronus/</loc>
+    </url>
+    <url>
         <loc>https://eyeori.xyz/zh/projects/devtools/</loc>
+    </url>
+    <url>
+        <loc>https://eyeori.xyz/zh/projects/lant/</loc>
     </url>
     <url>
         <loc>https://eyeori.xyz/zh/tags/</loc>
