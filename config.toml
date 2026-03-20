@@ -53,6 +53,7 @@ theme = "catppuccin-frappe"
 [extra]
 # 外观
 skin = "teal"
+stylesheets = ["css/projects-list.css"]
 theme_switcher = true
 favicon_emoji = "👨‍💻"
 

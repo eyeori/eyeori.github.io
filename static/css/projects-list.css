@@ -1,0 +1,177 @@
+/* 项目列表自定义样式 - 简洁大气的横向列表布局 */
+
+/* 列表容器 */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2rem;
+    padding: 0.75rem;
+    background: var(--bg-2);
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* 单个项目包装器 */
+.cards .card-wrapper {
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.cards .card-wrapper:hover {
+    background-color: var(--bg-0);
+}
+
+/* 项目之间的分隔线 */
+.cards .card-wrapper:not(:last-child) {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+/* 项目内容区域 */
+.cards .card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* 隐藏原始卡片样式 */
+.cards .card {
+    display: none;
+}
+
+/* 项目图片样式 */
+.cards .card-image {
+    width: 40px;
+    height: 40px;
+    margin: 0 1.25rem 0 0;
+    border-radius: 8px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+/* 项目信息容器 */
+.cards .card-info {
+    padding: 0;
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+}
+
+/* 卡片头部 - 标题和链接 */
+.cards .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* 项目标题 */
+.cards .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-color);
+    transition: color 0.2s ease;
+    line-height: 1.4;
+}
+
+.cards .card-wrapper:hover .card-title {
+    color: var(--primary-color);
+}
+
+/* 链接图标组 */
+.cards .card-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+/* 单个链接图标 - 使用高优先级覆盖主题样式 */
+.cards .card-link,
+.cards .card-link:link,
+.cards .card-link:visited,
+.cards .card-link:active,
+.cards .card-link:focus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    color: var(--text-color) !important;
+    opacity: 0.5;
+    background: transparent !important;
+    text-decoration: none !important;
+    outline: none;
+    transition: opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+/* 悬停效果前禁用伪元素 */
+.cards .card-link::before,
+.cards .card-link::after {
+    display: none !important;
+    content: none !important;
+}
+
+.cards .card-link:hover {
+    opacity: 1;
+    background-color: var(--bg-2) !important;
+    background: var(--bg-2) !important;
+    color: var(--primary-color) !important;
+    text-decoration: none !important;
+}
+
+.cards .card-link svg {
+    flex-shrink: 0;
+}
+
+/* 项目描述 */
+.cards .card-description {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    opacity: 0.6;
+    margin-top: 0.35rem;
+    line-height: 1.6;
+}
+
+/* 悬停时描述样式 */
+.cards .card-wrapper:hover .card-description {
+    opacity: 0.75;
+}
+
+/* 响应式调整 */
+@media all and (max-width: 720px) {
+    .cards {
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    .cards .card-wrapper {
+        padding: 0.875rem 1rem;
+    }
+
+    .cards .card-header {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .cards .card-title {
+        font-size: 1rem;
+    }
+
+    .cards .card-description {
+        font-size: 0.8rem;
+    }
+
+    .cards .card-link {
+        width: 28px;
+        height: 28px;
+    }
+
+    .cards .card-link svg {
+        width: 16px;
+        height: 16px;
+    }
+}
